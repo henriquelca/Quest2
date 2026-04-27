@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://cxu5xr3xjfmu"]
+
+[ext_resource type="Script" path="res://Cenas/game_over.gd" id="1_p5xkh"]
+
+[node name="GameOver" type="CanvasLayer"]
+script = ExtResource("1_p5xkh")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_fill_parent = true
+color = Color(0, 0, 0, 0.8)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_fill_parent = true
+alignment = 1
+
+[node name="Title" type="Label" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+text = "GAME OVER"
+text_overrun_behavior = 3
+add_child_suffix = "enabled"
+
+[node name="Spacer1" type="Control" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+
+[node name="RetryButton" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(200, 60)
+text = "RETRY"
+add_child_suffix = "enabled"
+
+[node name="Spacer2" type="Control" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+
+[node name="MenuButton" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(200, 60)
+text = "MAIN MENU"
+add_child_suffix = "enabled"
+
+[connection signal="pressed" from="VBoxContainer/RetryButton" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="VBoxContainer/MenuButton" to="." method="_on_menu_pressed"]
