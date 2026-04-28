@@ -13,5 +13,9 @@ func collect():
 	elif current_scene.contains("lailadc"):
 		get_tree().change_scene_to_file("res://Cenas/neve_level.tscn")
 	elif current_scene.contains("neve_level"):
+		get_tree().change_scene_to_file("res://Cenas/fase_duda.tscn")
+	elif current_scene.contains("fase_duda"):
+		get_tree().change_scene_to_file("res://Cenas/fase_jp.tscn")
+	elif current_scene.contains("fase_jp"):
 		get_tree().change_scene_to_file("res://Cenas/game_won.tscn")
 	queue_free()
