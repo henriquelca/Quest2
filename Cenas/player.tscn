@@ -289,4 +289,7 @@ shape = ExtResource("2_pmvhq")
 [node name="BodyCollisionShape2D" type="CollisionShape2D" parent="." unique_id=1699387193]
 shape = ExtResource("2_pmvhq")
 
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1608615457]
+zoom = Vector2(1.8, 1.8)
+
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

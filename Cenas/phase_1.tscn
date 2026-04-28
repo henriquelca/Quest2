@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://ugxrh6m1mdaq" path="res://Cenas/goomba.tscn" id="6_n00j1"]
 [ext_resource type="PackedScene" uid="uid://uni6wnro6x2q" path="res://Cenas/koopa.tscn" id="7_x6di6"]
 [ext_resource type="PackedScene" uid="uid://vf3ky3xlsjxq" path="res://Cenas/hud.tscn" id="8_du1s2"]
-[ext_resource type="PackedScene" path="res://Cenas/star.tscn" id="9_du1s3"]
+[ext_resource type="PackedScene" uid="uid://b2ejb5kc8fkcw" path="res://Cenas/star.tscn" id="9_du1s3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x6di6"]
 texture = ExtResource("1_lb8y5")
@@ -38,9 +38,6 @@ sources/4 = SubResource("TileSetAtlasSource_jjrtw")
 sources/5 = SubResource("TileSetAtlasSource_7yi6i")
 
 [node name="Phase1" type="Node" unique_id=872432415]
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=808033888]
-zoom = Vector2(2.75, 2.75)
 
 [node name="TileMap" type="TileMap" parent="." unique_id=963238689]
 tile_set = SubResource("TileSet_irhh0")
