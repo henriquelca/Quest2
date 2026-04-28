@@ -39,6 +39,10 @@ func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y += gravity * delta
 		
+	if position.y > 100 and not is_dead:
+		die()
+		return
+	
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = jump_velocity
 		
@@ -94,4 +98,4 @@ func die():
 		var death_tween = get_tree().create_tween()
 		death_tween.tween_property(self, "position", position + Vector2(0, -48), .5)
 		death_tween.chain().tween_property(self, "position", position + Vector2(0, 256), 1)
-		death_tween.tween_callback(func (): get_tree().reload_current_scene())
+		death_tween.tween_callback(func (): GameManager.lose_life())
