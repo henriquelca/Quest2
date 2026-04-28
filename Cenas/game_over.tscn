@@ -10,10 +10,10 @@ script = ExtResource("1_p5xkh")
 color = Color(0, 0, 0, 0.8)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1845007208]
-offset_left = 465.0
-offset_top = 170.0
-offset_right = 797.0
-offset_bottom = 503.0
+offset_left = 378.0
+offset_top = 134.0
+offset_right = 710.0
+offset_bottom = 467.0
 alignment = 1
 
 [node name="Title" type="Label" parent="VBoxContainer" unique_id=1073394094]

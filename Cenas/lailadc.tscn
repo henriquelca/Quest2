@@ -39,9 +39,6 @@ sources/5 = SubResource("TileSetAtlasSource_7yi6i")
 
 [node name="Phase2" type="Node" unique_id=785913355]
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=300926622]
-zoom = Vector2(2.75, 2.75)
-
 [node name="TileMap" type="TileMap" parent="." unique_id=603986200]
 tile_set = SubResource("TileSet_irhh0")
 format = 2

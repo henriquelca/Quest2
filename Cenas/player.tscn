@@ -271,7 +271,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Player" type="CharacterBody2D" unique_id=2136752110]
+[node name="Player" type="CharacterBody2D" unique_id=2136752110 groups=["player"]]
 collision_mask = 6
 script = ExtResource("1_iersn")
 
