@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Super Mario Bros"
 run/main_scene="uid://71wdokojahpi"
-config/features=PackedStringArray("4.6", "GL Compatibility")
+config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
